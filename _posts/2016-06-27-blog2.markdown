@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Quest of a developer: How to blog in GitHub!"
+date:   2016-06-27 21:12:09 +0200
+commentIssueId: 2
+published: false
+---
+
+Dear readers,
+
+TODO
+
+Reminder: My goal is to learn so feedback, comments and questions about the blog or code is very welcome.
+
+Happy coding,
+Marinus

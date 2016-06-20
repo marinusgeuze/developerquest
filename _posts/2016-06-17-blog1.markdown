@@ -1,7 +1,0 @@
----
-layout: post
-title:  "Quest of a developer: My first blog post!"
-date:   2016-06-17 21:10:09 +0200
----
-
-TODO

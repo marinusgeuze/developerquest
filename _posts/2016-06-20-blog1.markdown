@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Quest of a developer: My first blog post!"
+date:   2016-06-20 21:10:09 +0200
+commentIssueId: 1
+published: true
+---
+
+Dear readers,
+
+This is my first blog post in my live and it marks the start of my quest. The “Quest of a developer” for new architectural concepts, design/coding techniques, frameworks and libraries.
+
+I am a software developer for more than 15 years now. During these years I have learned a lot. Aside from this I read developer magazines/sites and join meetups regularly. In this way I stay up to date and keep a good overview of all the concepts and techniques. To mention a few:
+
+* Cloud (Azure, OpenShift, Amazon)
+* MicroServices
+* Reactive programming (manifesto)
+* Functional programming (SCALA, F#
+* Event driven architectures
+* CQRS
+* NoSQL Databases (MongoDB)
+* Angular 2
+* OAuth 2.0 & OpenID Connect
+* Git
+* …
+
+In my day to day work I am not able to apply all these concepts and techniques to my projects. For years I accepted this as a fact, however this changes today. I am starting this quest to learn these concepts and techniques. In regular intervals I will post new blogs to share with you the things I've learned. I hope you learn something from it and hopefully it will inspire you to do the same.
+
+I will store all my code as a result of the quest in GitHub. I want to invite you to look into this code and provide me with feedback about the way I've applied the concepts, design and code. My goal is to learn and the best way to do so is to get feedback from other developers. Comments and questions are welcome.
+
+I hope you will enjoy reading my blogs. 
+
+Happy coding,
+Marinus

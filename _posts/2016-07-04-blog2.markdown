@@ -3,9 +3,8 @@ layout: post
 title:  "Quest of a developer: How to blog in GitHub!"
 description: blogs, GitHub Pages, Jekyll
 --date:   2016-07-04 21:12:09 +0200
-date:   2016-06-27 21:10:09 +0200
 commentIssueId: 2
-published: true
+published: false
 ---
 
 Dear readers,

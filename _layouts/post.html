@@ -38,7 +38,8 @@ layout: default
                 var cbody = data[i].body_html;
                 var cavatarlink = data[i].user.avatar_url;
                 var cdate = new Date(data[i].created_at).toLocaleString();
-                $("#comments").append("<div class='comment'><div class='commentheader'><div class='commentgravatar'>" + '<img src="' + cavatarlink + '" alt="" width="20" height="20">  ' + "<a class='commentuser' href=\"" + cuserlink + "\">" + cuser + "</a>  <a class='commentdate' href=\"" + clink + "\">" + cdate + "</a><div></div><div class='commentbody'>" + cbody + "</div></div>");
+                $("#comments").append("<div class='comment'><div class='commentheader'><div class='commentgravatar'>" + '<img src="' + cavatarlink + '" alt="" width="20" height="20">' + "</div><a class='commentuser' href=\"" + cuserlink + "\">" + cuser + "</a><a class='commentdate' href=\"" + clink + "\">" + cdate + "</a></div><div class='commentbody'>" + cbody + "</div></div>");
+
             }
         }
         $.ajax("https://api.github.com/repos/marinusgeuze/developerquest/issues/{{page.commentIssueId}}/comments?per_page=100", {

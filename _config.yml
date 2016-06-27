@@ -12,10 +12,12 @@ description: > # this means to ignore newlines until "baseurl:"
   The site contains the blogs which report on the
   the quest of a developer to new architectural concepts, design/coding techniques,
   frameworks and libraries.
-baseurl: "/developerquest" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://github.com/marinusgeuze" # the base hostname & protocol for your site
 twitter_username: MarinusGeuze
 github_username:  marinusgeuze
 
 # Build settings
 markdown: kramdown
+gems:
+  - jekyll-seo-tag

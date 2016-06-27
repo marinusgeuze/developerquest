@@ -1,34 +1,38 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+
+#
+Only the main Sass file needs front matter
+
+(
+the dashes are enough
+
+)
 ---
+
 @charset "utf-8";
-
-
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size: 16px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$text-color:       #111;
+$text-color: #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color: #2a7ae2;
 
-$grey-color:       #828282;
+$grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width: 800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
+$on-palm: 600px;
+$on-laptop: 800px;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -38,20 +42,101 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@import "base",
+"layout",
+"syntax-highlighting";
 
-#header {
-	margin-bottom: 15px;
+.comment {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+.comment .commentheader {
+  display: block;
+  float: left;
+  height: 33px;
+  line-height: 33px;
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0px;
+  text-overflow: ellipsis;
+  text-shadow: rgba(255, 255, 255, 0.699219) 1px 1px 0px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.comment .commentheader .commentgravatar {
+  display: inline-block;
+  float: none;
+  height: 20px;
+  line-height: 1px;
+  margin-left: 5px;
+  margin-right: 3px;
+  margin-top: -2px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 1px;
+  text-overflow: clip;
+  text-shadow: rgba(255, 255, 255, 0.699219) 1px 1px 0px;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 20px;
+}
+
+.comment .commentheader a:link {
+  text-decoration: none;
+}
+
+.comment .commentheader .commentuser {
+  display: inline;
+  float: none;
+  font-weight: bold;
+  height: 0px;
+  line-height: 16px;
+  margin-left: 5px;
+  margin-right: 10px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 0px;
+  text-overflow: clip;
+  text-shadow: rgba(255, 255, 255, 0.699219) 1px 1px 0px;
+  white-space: nowrap;
+  width: 0px;
+}
+
+.comment .commentheader .commentdate {
+  display: inline;
+  float: none;
+  height: 0px;
+  line-height: 33px;
+  margin: 0px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 0px;
+  text-overflow: clip;
+  text-shadow: rgba(255, 255, 255, 0.699219) 1px 1px 0px;
+  white-space: nowrap;
+  width: 20em;
+}
+
+.comment .commentbody {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 20px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 0em;
+  position: static;
+  width: 96%;
+  word-wrap: break-word;
 }

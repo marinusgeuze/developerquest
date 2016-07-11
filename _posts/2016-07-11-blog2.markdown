@@ -19,7 +19,7 @@ To make it all fancier I used [Jekyll](https://jekyllrb.com) which is the engine
 
 When my blog was finally up and running I realized that there was one important capability named “Comments” missing. So after some investigation I found this [blog](http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html) from Ivan Zuzak which I used as inspiration.
 
-The only thing left on my wish list was a search engine optimization. I used a Jekyll plugin called jekyll-seo-tag for that. [Check this out for more information](https://help.github.com/articles/search-engine-optimization-for-github-pages). Furthermore I submitted the site for inclusion in Google's index.
+The only thing left on my wish list was a search engine optimization. I used a Jekyll plugin called jekyll-seo-tag for that. [Check this out for more information](https://help.github.com/articles/search-engine-optimization-for-github-pages). Furthermore I submitted the site for inclusion in Google's index and I have added Google Analytics.
 
 The source of this blog solution can be found on [GitHub](https://github.com/marinusgeuze/developerquest/tree/gh-pages). There you can find a README.md file which contains a step by step manual.
 

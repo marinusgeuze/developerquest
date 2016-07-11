@@ -1,29 +1,30 @@
-	---
-	layout: post
-	title:  "Quest of a developer: How to blog in GitHub!"
-	description: blogs, GitHub Pages, Jekyll
-	--date:   2016-07-04 21:12:09 +0200
-	commentIssueId: 2
-	published: false
-	---
+---
+layout: post
+title:  "Quest of a developer: How to blog in GitHub!"
+description: blogs, GitHub Pages, Jekyll
+date:   2016-07-11 21:12:09 +0200
+commentIssueId: 2
+published: true
+---
 
-	Dear readers,
+Dear readers,
 
-	Thanks for reading my second blog. Part of my developer quest was, funny enough, finding out how to write and where to publish my blog. 
+Thanks for reading my second blog. Part of my developer quest was, funny enough, finding out how to write and where to publish my blog. 
 
-	One thing I remembered about GitHub was the fact that it is more than just a code repository. It is also a collaboration platform. So I was wondering whether it was possible to use it for hosting my blogs. This thought turned out to be correct and the solution is called [GitHub Pages](https://pages.github.com). 
+One thing I remembered about GitHub was the fact that it is more than just a code repository. It is also a collaboration platform. So I was wondering whether it was possible to use it for hosting my blogs. This thought turned out to be correct and the solution is called [GitHub Pages](https://pages.github.com). 
 
-	The only thing you have to do to get your website (e.g. blog) up and running is to add your static web content to the gh-pages branch of your public repository. In my case [https://github.com/marinusgeuze/developerquest](https://github.com/marinusgeuze/developerquest) the result is directly visible on the gh-pages site [https://marinusgeuze.github.io/developerquest](https://marinusgeuze.github.io/developerquest)
+The only thing you have to do to get your website (e.g. blog) up and running is to add your static web content to the gh-pages branch of your public repository. In my case [https://github.com/marinusgeuze/developerquest](https://github.com/marinusgeuze/developerquest) the result is directly visible on the gh-pages site [https://marinusgeuze.github.io/developerquest](https://marinusgeuze.github.io/developerquest)
 
-	To make it all fancier I used [Jekyll](https://jekyllrb.com) which is the engine behind GitHub Pages. The nice thing about Jekyll is that is has an out-of-the-box support for blogs. Furthermore, Jekyll contains a build in development server which allows you to preview your site before you publish it on GitHub Pages. You can use any editor you want this [cheatsheet](http://cheat.jekyll.tips) can help by applying markup.
+To make it all fancier I used [Jekyll](https://jekyllrb.com) which is the engine behind GitHub Pages. The nice thing about Jekyll is that is has an out-of-the-box support for blogs. Furthermore, Jekyll contains a build in development server which allows you to preview your site before you publish it on GitHub Pages. You can use any editor you want this [cheatsheet](http://cheat.jekyll.tips) can help by applying markup.
 
-	When my blog was finally up and running I realized that there was one important capability named “Comments” missing. So after some investigation I found this [blog](http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html) from Ivan Zuzak which I used as inspiration.
+When my blog was finally up and running I realized that there was one important capability named “Comments” missing. So after some investigation I found this [blog](http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html) from Ivan Zuzak which I used as inspiration.
 
-	The only thing left on my wish list was a search engine optimization. I used a Jekyll plugin called jekyll-seo-tag for that. [Check this out for more information](https://help.github.com/articles/search-engine-optimization-for-github-pages). Furthermore I submitted the site for inclusion in Google's index.
+The only thing left on my wish list was a search engine optimization. I used a Jekyll plugin called jekyll-seo-tag for that. [Check this out for more information](https://help.github.com/articles/search-engine-optimization-for-github-pages). Furthermore I submitted the site for inclusion in Google's index.
 
-	The source of this blog solution can be found on [GitHub](https://github.com/marinusgeuze/developerquest/tree/gh-pages). There you can find a README.md file which contains a step by step manual.
+The source of this blog solution can be found on [GitHub](https://github.com/marinusgeuze/developerquest/tree/gh-pages). There you can find a README.md file which contains a step by step manual.
 
-	**Reminder:** My goal is to learn so feedback, comments and questions about this blog or related code are very welcome.
+**Reminder:** My goal is to learn so feedback, comments and questions about this blog or related code are very welcome.
 
-	Happy coding,
-	Marinus
+Happy coding,
+
+Marinus

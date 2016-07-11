@@ -4,7 +4,7 @@ This manual is based on the installation manual on the [Jekyll](https://jekyllrb
 
 **NOTE:** Officially Jekyll is not supported on Windows but it works anyway.
 
-#### Step by step manual ####
+## Step by step manual ##
 
 1. Install [Git for Windows](https://git-for-windows.github.io).
 
@@ -46,7 +46,6 @@ This manual is based on the installation manual on the [Jekyll](https://jekyllrb
 12. Change the _config.yml file
 
 	```baseurl: "/developerquest"```
-
 	```url: "https://github.com/marinusgeuze"``` 
 
 	**NOTE:** For local development your baseurl property in the _config.yml must be empty

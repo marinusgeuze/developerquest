@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Quest of a developer: Create an App with Ionic 2 and Angular 2!"
+description: blogs, app, Ionic 2, Angular 2, TypeScript, Cordova
+date:   2016-08-08 21:30:09 +0200
+commentIssueId: 3
+published: false
+---
+
+Dear readers,
+
+Metjekindnaarbuiten.nl
+
+Experience with Ionic 1 and Angular 1.
+
+Command: ionic start ionic2 sidemenu --v2 --ts
+Command: ionic serve
+Command: ionic serve --lab
+Command: ionic platform add android
+Command: ionic run android
+
+
+**Reminder:** My goal is to learn therefore feedback, comments and questions about this blog or related code are very welcome.
+
+Happy coding,
+
+Marinus

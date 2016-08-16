@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quest of a developer: My first blog post!"
+title:  "My first blog post!"
 description: Quest of a developer, blog, new architectural concepts, design/coding techniques, frameworks and libraries
 date:   2016-06-27 21:10:09 +0200
 commentIssueId: 1

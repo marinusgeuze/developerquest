@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Create an App with Ionic 2 and Angular 2!"
+description: Quest of a developer, blog, app, Ionic 2, Angular 2, TypeScript, Cordova
+date:   2016-08-15 20:54:09 +0200
+commentIssueId: 3
+published: true
+---
+
+Dear readers,
+
+As part of my quest I want to learn more about [Ionic 2](http://ionicframework.com/docs/v2). Ionic 2 is a web framework for developing hybrid mobile apps. Ionic is build on top of [Angular 2](https://angular.io) and [Apache Cordova](https://cordova.apache.org). With Angular 2 the preferred coding language is [TypeScript](https://www.typescriptlang.org/) which is a typed superset of JavaScript. Currently I only have knowledge of Ionic 1 and Angular 1 so I hope to learn a lot.
+
+In this blog I will explain step by step how to generate a hybrid app with Ionic 2 and how to deploy this app on your mobile device.
+
+1. Install [Node.js](https://nodejs.org). Do not forget to add Node.js to your path variable.
+2. Execute this command to install Ionic 2: ```npm install -g ionic@beta```
+3. Execute this command to install latest version of Cordova: ```npm install -g cordova```
+
+Now Ionic 2 is installed and you can create your app.
+
+1. Execute command: ```ionic start <appname> sidemenu --v2 --ts```
+
+    *This creates an Ionic 2 (--v2) app using the sidemenu template and TypeScript (--ts) is used as language.*
+2. Execute command: ```ionic serve```
+
+    *This starts a live reloading HTTP server which will reload the browser after every code change. :-)*
+
+    *When you use the command ```ionic serve --lab``` it will start an iOS, Android and Windows frame side-by-side.*
+
+3. Execute command: ```ionic platform add android```
+
+    *This adds the native Android platform code to your project. Adding the iOS platform on a Windows PC is not possible, however Ionic has a cloud offering which provides native packaging so that you can create an iOS App without owning a Mac. See this [link](https://ionic.io/cloud#packaging) from more information. Note that Ionic Cloud is still in beta at the moment of writing.*
+
+4. Execute command: ```ionic run android```
+
+    *This creates an Android APK file and installs this on your Android emulator or Android phone when connected to your PC. Use this [tutorial](http://visualgdb.com/KB/usbdebug-manual) to connect your Android device to your PC. Execute command ```adb devices``` to check if your device is properly connected.*
+
+    *The ```--livereload``` allows you to change and test your code on the device without redeploying the app. Sadly it is in beta and it did not work at the moment of writing.*
+
+
+As you can see it is quite easy to create an empty Ionic 2 app. In my next blog I will add some functionality to my Ionic 2 app using Ionic 2, Angular 2 and TypeScript capabilities so that the Apps gets some body.
+
+**Reminder:** My goal is to learn therefore feedback, comments and questions about this blog or related code are very welcome.
+
+Happy coding,
+
+Marinus

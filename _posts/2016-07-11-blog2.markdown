@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Quest of a developer: How to blog in GitHub!"
-description: blogs, GitHub Pages, Jekyll
+title:  "How to blog in GitHub!"
+description: Quest of a developer, blog, GitHub Pages, Jekyll
 date:   2016-07-11 21:12:09 +0200
 commentIssueId: 2
 published: true
@@ -15,7 +15,7 @@ One thing I have remembered about GitHub was the fact that it is more than just 
 
 The only thing you have to do to get your website (e.g. blog) up and running is to add your static web content to the gh-pages branch of your public repository. In my case [https://github.com/marinusgeuze/developerquest](https://github.com/marinusgeuze/developerquest) the result is directly visible on the gh-pages site [https://marinusgeuze.github.io/developerquest](https://marinusgeuze.github.io/developerquest)
 
-To make it all fancier I used [Jekyll](https://jekyllrb.com) which is the engine behind GitHub Pages. The nice thing about Jekyll is that is has an out-of-the-box support for blogs. Furthermore, Jekyll contains a build in development server which allows you to preview your site before you publish it on GitHub Pages. You can use any editor tool you want and this [cheatsheet](http://cheat.jekyll.tips) can help by applying markup.
+To make it all fancier I used [Jekyll](https://jekyllrb.com) which is the engine behind GitHub Pages. The nice thing about Jekyll is that is has an out-of-the-box support for blogs. Furthermore, Jekyll contains a build in development server which allows you to preview your site before you publish it on GitHub Pages. You can use any editor tool you want and this [cheatsheet](http://cheat.jekyll.tips) can help by applying Markdown markup.
 
 When my blog was finally up and running I realized that there was one important capability named “Comments” missing. So after some investigation I found this [blog](http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html) from Ivan Zuzak which I used as inspiration.
 

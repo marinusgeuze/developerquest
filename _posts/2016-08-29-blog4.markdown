@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "First version of the metjekindnaarbuiten app!"
+description: Quest of a developer, blog, app, Ionic 2, Angular 2, TypeScript, Cordova
+date:   2016-09-02 21:54:09 +0200
+commentIssueId: 4
+published: false
+---
+
+Dear readers,
+
+In my [last blog](../../../../2016/08/15/blog3.html) I created an empty Ionic App. In this blog I implement the first functionality of the app. The name of the app is in Dutch "metjekindernaarbuiten", translated to English it would be something like "gowithyourkindoutside". My goal is to add all playground in the neighbourhood to this app so that I can find the closest playground with the required characteristics when I going outside with my kids to play.
+
+The first functionality I have added is a list which shows all the playgrounds. The list contains a search filter which searches on all the available data fields. When you click on a playground in the list a detail screen is opened. I used [this blog](https://scotch.io/tutorials/build-a-mobile-app-with-angular-2-and-ionic-2) written by Ganga Chris as reference which was a quick way to get started.
+
+One thing I learned during the development of the app that method overloading is not supported in TypeScript as expected. This has to do with the fact the TypeScript still compiles to JavaScript and therefore has some limited because of that. More information about this can be found [here](https://blog.mariusschulz.com/2016/08/18/function-overloads-in-typescript)
+
+For determining how far the playground is located from my current location I used the cordova geolocation plugin. Which can be added by executing ```ionic plugin add cordova-plugin-geolocation``` in the root of the project. I found [this blog](http://www.joshmorony.com/ionic-2-how-to-use-google-maps-geolocation-video-tutorial) from Josh Morony which was a big help.
+
+The Ionic framework provides a whole lot of out-of-the-box components. One of these components is the ```<ion-searchbar>```. Which makes it very easy to implement search functionality. For example the searchbar contains out-of-the-box debounce implementation which prevents a search action after every character you type. For more [info](http://ionicframework.com/docs/v2/api/components/searchbar/Searchbar).
+
+An other nice feature of Ionic is the icon and splashscreen generator which generated the correct artifacts for all the different device types and operating systems (android, ios). You can find more information [here](http://ionicframework.com/docs/cli/icon-splashscreen.html). I used this [site](http://www.gieson.com/Library/projects/utilities/icon_slayer) to create the template icon based on an picture I found on the internet. I just edited the splash screen template provided by Ionic to create my own splashscreen. Ionic provides Photoshop templates in case you have a Photoshop licence (which I havn't).
+
+The data and images in the app are currently part of the app. I found out that you have to add these files (JSON and JPG's) in www folder of the app to get this working.
+
+My next goals are to improve and extend the functionality in the app. Furthermore I want to create a REST-API which will provide required API's so that I can remove the data and images from the app. More about this in my next blogs.
+
+**Reminder:** My goal is to learn therefore feedback, comments and questions about this blog or related code are very welcome. The code of this app can be found on GitHub, see this [metjekindnaarbuiten](https://github.com/marinusgeuze/metjekindnaarbuiten) repository.
+
+Happy coding,
+
+Marinus

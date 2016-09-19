@@ -2,30 +2,32 @@
 layout: post
 title:  "First version of the metjekindnaarbuiten app!"
 description: Quest of a developer, blog, app, Ionic 2, Angular 2, TypeScript, Cordova
-date:   2016-09-02 21:54:09 +0200
+date:   2016-09-19 19:54:09 +0200
 commentIssueId: 4
-published: false
+published: true
 ---
 
 Dear readers,
 
-In my [last blog](../../../../2016/08/15/blog3.html) I created an empty Ionic App. In this blog I implement the first functionality of the app. The name of the app is in Dutch "metjekindernaarbuiten", translated to English it would be something like "gowithyourkindoutside". My goal is to add all playground in the neighbourhood to this app so that I can find the closest playground with the required characteristics when I going outside with my kids to play.
+In my [last blog](../../../../2016/08/15/blog3.html) I've created an empty Ionic 2 App. In this blog I will write about implementing the first functionality of the app. The name of the app is in Dutch "metjekindnaarbuiten", translated to English it would be something like "gooutsidewithyourkid". My goal is to add all the playgrounds in the neighbourhood to this app so that I can find the closest playground with the required characteristics everytime I want to go and play outside with my children.
 
-The first functionality I have added is a list which shows all the playgrounds. The list contains a search filter which searches on all the available data fields. When you click on a playground in the list a detail screen is opened. I used [this blog](https://scotch.io/tutorials/build-a-mobile-app-with-angular-2-and-ionic-2) written by Ganga Chris as reference which was a quick way to get started.
+The first functionality I've added is a list which shows all the available playgrounds. This list contains a search filter which searches on all the available data fields. A detail screen is opened when you click on a playground in the list. I've used [this blog](https://scotch.io/tutorials/build-a-mobile-app-with-angular-2-and-ionic-2) written by Ganga Chris as reference.
 
-One thing I learned during the development of the app that method overloading is not supported in TypeScript as expected. This has to do with the fact the TypeScript still compiles to JavaScript and therefore has some limited because of that. More information about this can be found [here](https://blog.mariusschulz.com/2016/08/18/function-overloads-in-typescript)
+One thing I've learned during the development of this app is that Angular 2, Ionic 2 and TypeScript are very easy to learn. When you are used to Java or C#, than the type system of TypeScript feels very familiar. One thing I've noticed is that the method overloading is not supported by TypeScript as expected. This due to the fact that the TypeScript still compiles to JavaScript and therefore has some limitations. More information about this topic can be found [here](https://blog.mariusschulz.com/2016/08/18/function-overloads-in-typescript).
 
-For determining how far the playground is located from my current location I used the cordova geolocation plugin. Which can be added by executing ```ionic plugin add cordova-plugin-geolocation``` in the root of the project. I found [this blog](http://www.joshmorony.com/ionic-2-how-to-use-google-maps-geolocation-video-tutorial) from Josh Morony which was a big help.
+For determining how far the playground is located from my current location I've used the Cordova Geolocation plugin. Which can be added by executing ```ionic plugin add cordova-plugin-geolocation``` in the root of the project. [This blog](http://www.joshmorony.com/ionic-2-how-to-use-google-maps-geolocation-video-tutorial) from Josh Morony was a big help by implementing this functionality. Sadly I still have one issue with the implementation of Google Maps, see [this forum post](http://stackoverflow.com/questions/39580890/google-maps-only-load-the-first-time-second-time-it-is-gray) for more information. Any help to resolve this issue is very welcome.
 
-The Ionic framework provides a whole lot of out-of-the-box components. One of these components is the ```<ion-searchbar>```. Which makes it very easy to implement search functionality. For example the searchbar contains out-of-the-box debounce implementation which prevents a search action after every character you type. For more [info](http://ionicframework.com/docs/v2/api/components/searchbar/Searchbar).
+It is good to see that the Ionic framework provides a whole lot of out-of-the-box components. One of these components is the ```<ion-searchbar>``` which makes it very easy to implement search functionality. For example the search bar contains out-of-the-box debounce implementation which prevents a search action after every character you type. Click [here](http://ionicframework.com/docs/v2/api/components/searchbar/Searchbar) for more info.
 
-An other nice feature of Ionic is the icon and splashscreen generator which generated the correct artifacts for all the different device types and operating systems (android, ios). You can find more information [here](http://ionicframework.com/docs/cli/icon-splashscreen.html). I used this [site](http://www.gieson.com/Library/projects/utilities/icon_slayer) to create the template icon based on an picture I found on the internet. I just edited the splash screen template provided by Ionic to create my own splashscreen. Ionic provides Photoshop templates in case you have a Photoshop licence (which I havn't).
+Another nice feature of Ionic is the icon and splashscreen generator which generates the correct artifacts for all the different device types and operating systems (Android, iOS). You can find more information [here](http://ionicframework.com/docs/cli/icon-splashscreen.html). I've used this [site](http://www.gieson.com/Library/projects/utilities/icon_slayer) to create the template icon based on an picture I've found on the internet. I've just edited the splash screen template provided by Ionic to create my own splashscreen. Ionic provides Photoshop templates in case you have a Photoshop licence (which I haven't).
 
-The data and images in the app are currently part of the app. I found out that you have to add these files (JSON and JPG's) in www folder of the app to get this working.
+Sadly URL routing is not yet supported by Ionic 2. This because the Angular 2 team keeps changing the router implementation. However [this](https://github.com/driftyco/ionic/issues/6563) issue states that it will be supported in beta release 12. Which is the next version to be released.
 
-My next goals are to improve and extend the functionality in the app. Furthermore I want to create a REST-API which will provide required API's so that I can remove the data and images from the app. More about this in my next blogs.
+The data and images in the app are currently a part of the app. I've found out that you have to add these files (JSON and JPG's) in www folder of the app to get this working.
 
-**Reminder:** My goal is to learn therefore feedback, comments and questions about this blog or related code are very welcome. The code of this app can be found on GitHub, see this [metjekindnaarbuiten](https://github.com/marinusgeuze/metjekindnaarbuiten) repository.
+My next goals are to improve and extend the functionality of the app. Furthermore I want to create a REST-API which will provide the required API's so that I can remove the data and images from the app to a database. More about it in my next blogs.
+
+    **Reminder:** My goal is to learn therefore feedback, comments and questions about this blog or related code are very welcome. The code of this app can be found on GitHub, see this [metjekindnaarbuiten](https://github.com/marinusgeuze/metjekindnaarbuiten) repository.
 
 Happy coding,
 

@@ -9,7 +9,7 @@ published: true
 
 Dear readers,
 
-In my [last blog](../../../../2016/08/15/blog3.html) I've created an empty Ionic 2 App. In this blog I will write about implementing the first functionality of the app. The name of the app is in Dutch "metjekindnaarbuiten", translated to English it would be something like "gooutsidewithyourkid". My goal is to add all the playgrounds in the neighbourhood to this app so that I can find the closest playground with the required characteristics everytime I want to go and play outside with my children.
+In my [last blog](../../../../developerquest/2016/08/15/blog3.html) I've created an empty Ionic 2 App. In this blog I will write about implementing the first functionality of the app. The name of the app is in Dutch "metjekindnaarbuiten", translated to English it would be something like "gooutsidewithyourkid". My goal is to add all the playgrounds in the neighbourhood to this app so that I can find the closest playground with the required characteristics everytime I want to go and play outside with my children.
 
 The first functionality I've added is a list which shows all the available playgrounds. This list contains a search filter which searches on all the available data fields. A detail screen is opened when you click on a playground in the list. I've used [this blog](https://scotch.io/tutorials/build-a-mobile-app-with-angular-2-and-ionic-2) written by Ganga Chris as reference.
 

@@ -25,9 +25,9 @@ Sadly URL routing is not yet supported by Ionic 2. This because the Angular 2 te
 
 The data and images in the app are currently a part of the app. I've found out that you have to add these files (JSON and JPG's) in www folder of the app to get this working.
 
-My next goals are to improve and extend the functionality of the app. Furthermore I want to create a REST-API which will provide the required API's so that I can remove the data and images from the app to a database. More about it in my next blogs.
+My next goals are to improve and extend the functionality of the app. Furthermore I want to create a REST API which will provide the required API's so that I can remove the data and images from the app to a database. More about this in my next blogs.
 
- **Reminder:** My goal is to learn therefore feedback, comments and questions about this blog or related code are very welcome. The code of this app can be found on GitHub, see this [metjekindnaarbuiten](https://github.com/marinusgeuze/metjekindnaarbuiten) repository.
+**Reminder:** My goal is to learn therefore feedback, comments and questions about this blog or related code are very welcome. The code of this app can be found on GitHub, see this [metjekindnaarbuiten](https://github.com/marinusgeuze/metjekindnaarbuiten) repository.
 
 Happy coding,
 

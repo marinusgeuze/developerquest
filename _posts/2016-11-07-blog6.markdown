@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "???"
+description: Quest of a developer, blog, ???
+date:   2016-11-07 19:24:09 +0200
+commentIssueId: 6
+published: false
+---
+
+Dear readers,
+
+https://www.3pillarglobal.com/insights/building-a-microservice-architecture-with-spring-boot-and-docker-part-i
+
+https://spring.io/guides/gs/spring-boot-docker/
+
+http://docs.spring.io/spring-boot/docs/current/reference/html/howto-embedded-servlet-containers.html
+https://spring.io/guides/gs/gradle/
+
+**Reminder:** My goal is to learn therefore feedback, comments and questions about this blog or related code are very welcome.
+
+Happy coding,
+
+Marinus

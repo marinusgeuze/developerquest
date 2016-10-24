@@ -2,7 +2,7 @@
 layout: post
 title:  "Created my first docker image!"
 description: Quest of a developer, blog, docker, docker-machine, debian, jetty
-date:   2016-10-24 18:54:09 +0200
+date:   2016-10-24 20:24:09 +0200
 commentIssueId: 5
 published: true
 ---

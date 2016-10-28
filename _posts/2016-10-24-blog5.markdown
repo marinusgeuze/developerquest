@@ -9,7 +9,7 @@ published: true
 
 Dear readers,
 
-I want to run my REST API for the "metjekindnaarbuiten" app on a Linux server which is build, shipped and runned by [Docker](https://www.docker.com). Why? Simply because I want to get hands-on experience with Docker. As Linux distribution I have chosen the [Debian ("Jessie" release)](https://www.debian.org) and on top [Jetty](http://www.eclipse.org/jetty) as Java HTTP (Web) Server and Java Servlet container.
+I want to run my REST API for the "metjekindnaarbuiten" app on a Linux server which is build, shipped and ran by [Docker](https://www.docker.com). Why? Simply because I want to get hands-on experience with Docker. As Linux distribution I have chosen the [Debian ("Jessie" release)](https://www.debian.org) and on top [Jetty](http://www.eclipse.org/jetty) as Java HTTP (Web) Server and Java Servlet container.
  
 First I want to state that the [Docker documentation](https://docs.docker.com) is very good and complete. It contains lots of step-by-step guides and tutorials. So I will only describe the specific steps I've executed to get my Linux server with Jetty up and running.  
 
@@ -25,16 +25,16 @@ The next step is to create your image (see this [link](https://docs.docker.com/e
  2. ```docker run -d -p 8000:8080 coldrye/debian-jetty:9-4-0-jessie-latest``` to run the image.
  3. ```docker ps``` to see the running docker containers, note the container id of your coldrye/debian-jetty container.
  4. ```docker cp c:\docker\test.war <container id>:/user/share/jetty/webapps``` to copy the test.war file to your running container. Repeat this steps for the 'test.d' folder and 'test.xml' files. This test.war and related files are part of the [Jetty demonstration applications](http://www.eclipse.org/jetty/documentation/9.3.x/quickstart-deploying-webapps.html).
- 5. ```docker commit -m "Add test.war to image" -a "<author name>" <container id> <dockeraccount>/debian-jetty``` to commit these changes to a new image named <dockeraccount>/debian-jetty.
+ 5. ```docker commit -m "Add test.war to image" -a "<author name>" <container id> <dockeraccount>/debian-jetty``` to commit these changes to a new image named \<dockeraccount\>/debian-jetty.
  6. ```docker run -d -p 8888:8080 <dockeraccount>/debian-jetty``` to start a container based on your own image. 
  7. Test your container by starting this url [localhost:8888/test](localhost:8888/test) in your browser.
  7. ```docker push <dockeraccount>/debian-jetty``` which pushes it to [https://hub.docker.com](https://hub.docker.com). Of course you have to create an account first. My public profile is [https://hub.docker.com/u/marinusgeuze](https://hub.docker.com/u/marinusgeuze).
 
-By following these 7 steps I've managed to created my first Docker image and reached my goal of gettng a Linux server with Jetty up and running on my local Windows machine. :-)
+By following these 7 steps I've managed to created my first Docker image and reached my goal of getting a Linux server with Jetty up and running on my local Windows machine. :-)
 
 One command I found very useful is ```docker exec -it <containerid> bash``` . This command starts a SSH session to your container.
 
-In my next blog I will create a Spring Boot application which contains the REST API for my app. This application will be build, shipped and runned by Docker.
+In my next blog I will create a Spring Boot application which contains the REST API for my app. This application will be build, shipped and ran by Docker.
 
 **Reminder:** My goal is to learn therefore feedback, comments and questions about this blog or related code are very welcome.
 
